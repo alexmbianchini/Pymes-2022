@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import { ArticulosComponent } from './articulos/articulos.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -22,8 +23,9 @@ import { ArticulosComponent } from './articulos/articulos.component';
       { path: '', redirectTo: '/inicio', pathMatch: 'full' },
       { path: 'inicio', component: InicioComponent },
       { path: 'articulosfamilias', component: ArticulosFamiliasComponent },
-      { path: 'articulos', component: ArticulosComponent }
+      { path: 'articulos', component: ArticulosComponent },
     ]),
+    ReactiveFormsModule,
   ],
   declarations: [
     AppComponent,
@@ -31,7 +33,7 @@ import { ArticulosComponent } from './articulos/articulos.component';
     InicioComponent,
     ArticulosFamiliasComponent,
     MenuComponent,
-    ArticulosComponent
+    ArticulosComponent,
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent],
