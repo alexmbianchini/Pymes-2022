@@ -13,6 +13,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbPagination Module } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';
       { path: 'articulos', component: ArticulosComponent },
     ]),
     ReactiveFormsModule,
+    NgbPaginationModule,
   ],
   declarations: [
     AppComponent,
