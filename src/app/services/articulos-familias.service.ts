@@ -16,7 +16,7 @@ import { ArticuloFamilia } from '../../app/models/articulo-familia';
 export class ArticulosFamiliasService {
   resourceUrl: string;
   constructor(private httpClient: HttpClient) {
-    this.resourceUrl = 'http://pav2.azurewebsites.net/api/ArticulosFamilias/';
+    this.resourceUrl = 'https://pav2.azurewebsites.net/api/ArticulosFamilias/';
   }
 
   get() {
